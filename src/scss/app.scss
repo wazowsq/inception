@@ -4,9 +4,13 @@ html, body, #root, .content
 {
     @include default;
     @extend #HIDDEN;
+    font-size: 0.87rem;
 }
 
 body
 {
-    background: #f00;
+    background: $light;
+
+    /* Header */
+    @import "../include/header/header";
 }

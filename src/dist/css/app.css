@@ -13,7 +13,7 @@
   position: absolute;
 }
 
-#FIXED {
+#FIXED, body header {
   position: fixed;
 }
 
@@ -47,18 +47,18 @@
 
 #NO-MARGIN, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, *,
 *:after,
-*:before, #root, .content {
+*:before, #root, .content, body header {
   margin: 0;
 }
 
 #NO-PADDING, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, *,
 *:after,
-*:before, #root, .content {
+*:before, #root, .content, body header {
   padding: 0;
 }
 
 #FAMILY, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-  font-family: senticosansRegular, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #LIGHTER {
@@ -154,7 +154,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   outline: 0;
   vertical-align: baseline;
   font-style: inherit;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 1rem;
 }
 
@@ -172,8 +172,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 html, body, #root, .content {
   width: 100%;
   height: 100%;
+  font-size: 0.87rem;
 }
 
 body {
-  background: #f00;
+  background: white;
+  /* Header */
+  /* Header
+----------------------------------------------------------------------- */
+}
+
+body header {
+  width: 100%;
+  height: 35px;
+  background: #E8E8E8;
+  padding: 0 30px;
+  line-height: 35px;
 }
