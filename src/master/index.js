@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
+import Header from '../include/header';
+
+import '../dist/css/style.min.css';
 
 class Master extends Component {
   render() {
     return (
-    	<h1>a</h1>
+    	<div className="content">
+        <Header />
+      </div>
     );
   }
 }
