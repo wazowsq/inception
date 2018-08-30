@@ -196,7 +196,7 @@ body header {
   width: 100%;
   height: 35px;
   background: #E8E8E8;
-  padding: 0 20px;
+  padding: 0 30px;
   line-height: 35px;
   z-index: 1;
   /* ContactNav */
@@ -247,4 +247,8 @@ body aside, body article, body section {
 
 body aside {
   padding-top: 35px;
+}
+
+body aside article {
+  padding: 30px;
 }
