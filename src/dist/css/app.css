@@ -17,7 +17,7 @@
   position: fixed;
 }
 
-#LEFT, body aside article section, body ul li {
+#LEFT, body header nav h1 a, body aside article section, body ul li {
   float: left;
 }
 
@@ -89,7 +89,7 @@
   text-decoration: underline;
 }
 
-#NO-UNDERLINE, body ul li a {
+#NO-UNDERLINE, body header nav h1 a, body ul li a {
   text-decoration: none;
 }
 
@@ -125,7 +125,7 @@
   overflow: hidden;
 }
 
-#ANIMATE {
+#ANIMATE, body header nav h1:hover a {
   transition: .3s;
 }
 
@@ -225,6 +225,30 @@ body header nav {
   margin-top: 55px;
 }
 
+body header nav h1 {
+  width: 32px;
+  height: 25px;
+  background: url(../../dist/img/ux-logo.png) no-repeat 0 -25px;
+  margin-bottom: 30px;
+}
+
+body header nav h1 a {
+  height: 25px;
+  line-height: 25px;
+  margin-left: 42px;
+  font-weight: lighter;
+  font-size: 0.87rem;
+  color: #201F24;
+}
+
+body header nav h1:hover {
+  background-position: 0 -50px;
+}
+
+body header nav h1:hover a {
+  color: #FF305B;
+}
+
 body header nav ul.nav {
   width: 100px;
 }
@@ -240,7 +264,8 @@ body header nav ul.nav li a {
   font-weight: lighter;
 }
 
-body header nav ul.nav li a:hover {
+body header nav ul.nav li a:hover,
+body header nav ul.nav li a.active {
   color: #FF305B;
 }
 

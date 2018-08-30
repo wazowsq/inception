@@ -6,6 +6,33 @@ nav
     @extend #ABSOLUTE;
     margin-top: 55px;
 
+    h1
+    {
+        width: 32px;   height: 25px;
+        background: url(../../dist/img/ux-logo.png) no-repeat 0 -25px;
+        margin-bottom: 30px;
+
+        a
+        {
+            @extend #LEFT, #NO-UNDERLINE;
+            height: 25px;   line-height: 25px;
+            margin-left: 42px;
+            font-weight: lighter;   font-size: 0.87rem;
+            color: $dark;
+        }
+
+        &:hover
+        {
+            background-position: 0 -50px;
+
+            a
+            {
+                @extend #ANIMATE;
+                color: $danger;
+            }
+        }
+    }
+
     ul.nav
     {
         width: 100px;
@@ -20,9 +47,11 @@ nav
                 color: $light;
                 font-size: 0.87rem;
                 font-weight: lighter;
-
-                &:hover { color: $danger; }
             }
+
+            a:hover,
+            a.active
+            { color: $danger; }
         }
     }
 }
