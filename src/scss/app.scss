@@ -4,7 +4,6 @@ html, body, #root, .content
 {
     @include default;
     @extend #HIDDEN;
-    font-size: 0.87rem;
 }
 
 body
@@ -13,4 +12,14 @@ body
 
     /* Header */
     @import "../include/header/header";
+
+    ul
+    {
+        @extend #NO-LIST;
+        @include space;
+
+        li { @extend #LEFT; }
+
+        li a { @extend #NO-UNDERLINE; }
+    }
 }

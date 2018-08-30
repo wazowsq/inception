@@ -9,4 +9,36 @@ header
     background: $silver;
     padding: 0 30px;
     line-height: 35px;
+
+    ul li,
+    ul li a
+    {
+        color: $concrete;
+        font-size: 0.75rem;
+
+        a:hover
+        { color: $danger; }
+    }
+
+    ul.contact li
+    {
+        margin-right: 30px;
+
+        &:last-child { @extend #NO-MARGIN; }
+
+        i.fas { margin-right: 8px; }
+    }
+
+    ul.social
+    {
+        @extend #RIGHT;
+
+        li
+        {
+            margin: 0 5px;
+
+            &:last-child
+            { margin-right: 5px; }
+        }
+    }
 }

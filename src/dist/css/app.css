@@ -17,11 +17,11 @@
   position: fixed;
 }
 
-#LEFT {
+#LEFT, body ul li {
   float: left;
 }
 
-#RIGHT {
+#RIGHT, body header ul.social {
   float: right;
 }
 
@@ -47,13 +47,13 @@
 
 #NO-MARGIN, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, *,
 *:after,
-*:before, #root, .content, body header {
+*:before, #root, .content, body header, body header ul.contact li:last-child, body ul {
   margin: 0;
 }
 
 #NO-PADDING, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, *,
 *:after,
-*:before, #root, .content, body header {
+*:before, #root, .content, body header, body ul {
   padding: 0;
 }
 
@@ -89,7 +89,7 @@
   text-decoration: underline;
 }
 
-#NO-UNDERLINE {
+#NO-UNDERLINE, body ul li a {
   text-decoration: none;
 }
 
@@ -109,7 +109,7 @@
   cursor: pointer;
 }
 
-#NO-LIST {
+#NO-LIST, body ul {
   list-style: none;
 }
 
@@ -172,7 +172,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 html, body, #root, .content {
   width: 100%;
   height: 100%;
-  font-size: 0.87rem;
 }
 
 body {
@@ -188,4 +187,31 @@ body header {
   background: #E8E8E8;
   padding: 0 30px;
   line-height: 35px;
+}
+
+body header ul li,
+body header ul li a {
+  color: #7F7F7F;
+  font-size: 0.75rem;
+}
+
+body header ul li a:hover,
+body header ul li a a:hover {
+  color: #FF305B;
+}
+
+body header ul.contact li {
+  margin-right: 30px;
+}
+
+body header ul.contact li i.fas {
+  margin-right: 8px;
+}
+
+body header ul.social li {
+  margin: 0 5px;
+}
+
+body header ul.social li:last-child {
+  margin-right: 5px;
 }
