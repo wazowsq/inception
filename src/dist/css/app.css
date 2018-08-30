@@ -225,6 +225,25 @@ body header nav {
   margin-top: 55px;
 }
 
+body header nav ul.nav {
+  width: 100px;
+}
+
+body header nav ul.nav li {
+  width: 100%;
+  line-height: 25px;
+}
+
+body header nav ul.nav li a {
+  color: white;
+  font-size: 0.87rem;
+  font-weight: lighter;
+}
+
+body header nav ul.nav li a:hover {
+  color: #FF305B;
+}
+
 body header ul.contact li {
   margin-right: 30px;
 }

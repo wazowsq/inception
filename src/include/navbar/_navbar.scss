@@ -5,4 +5,24 @@ nav
 {
     @extend #ABSOLUTE;
     margin-top: 55px;
+
+    ul.nav
+    {
+        width: 100px;
+
+        li
+        {
+            width: $percentage;
+            line-height: 25px;
+
+            a
+            {
+                color: $light;
+                font-size: 0.87rem;
+                font-weight: lighter;
+
+                &:hover { color: $danger; }
+            }
+        }
+    }
 }
