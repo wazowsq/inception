@@ -13,6 +13,9 @@ body
     /* Header */
     @import "../include/header/header";
 
+    /* Aside */
+    @import "../include/aside/aside";
+
     ul
     {
         @extend #NO-LIST;

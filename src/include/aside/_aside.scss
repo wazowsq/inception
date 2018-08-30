@@ -1,6 +1,18 @@
 /* Aside
 ----------------------------------------------------------------------- */
 
+aside, article, section
+{ @include default; }
+
 aside
 {
+    padding-top: 35px;
+
+    article
+    {
+        @extend #OVERFLOW;
+
+        section
+        { @extend #LEFT; }
+    }
 }
