@@ -9,7 +9,7 @@ nav
     h1
     {
         width: 32px;   height: 25px;
-        background: url(../../dist/img/ux-logo.png) no-repeat 0 -25px;
+        background: url(../../dist/img/ux-logo.png) no-repeat 0 0;
         margin-bottom: 30px;
 
         a
@@ -18,7 +18,7 @@ nav
             height: 25px;   line-height: 25px;
             margin-left: 42px;
             font-weight: lighter;   font-size: 0.87rem;
-            color: $dark;
+            color: $light;
         }
 
         &:hover
