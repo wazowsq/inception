@@ -1,12 +1,11 @@
 import React from 'react';
 
+import ContactNav from '../contact';
+
 const Header = () => {
     return (
         <header>
-            <ul className="contact">
-                <li><i className="fas fa-envelope"></i><a href="" title="Mande um e-mail para mim">me@rafaeltorr.es</a></li>
-                <li><i className="fas fa-phone"></i>+55 11 99106 5485 | +55 11 99910 2709</li>
-            </ul>
+            <ContactNav />
             <ul className="social">
                 <li><a href="" title="Twitter"><i className="fab fa-twitter"></i></a></li>
                 <li><a href="" title="Facebook"><i className="fab fa-facebook-f"></i></a></li>
