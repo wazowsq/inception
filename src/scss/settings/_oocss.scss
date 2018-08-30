@@ -45,3 +45,7 @@
 #HIDDEN                 { overflow: hidden; }
 #ANIMATE                { transition: .3s; }
 #SPACING                { letter-spacing:2px; }
+
+//MEDIAQUERIES
+#TABLET                 { max-width: $break-tablet; }
+#MOBILE                 { max-width: $break-mobile; }

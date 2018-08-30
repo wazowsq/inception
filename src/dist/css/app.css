@@ -133,6 +133,14 @@
   letter-spacing: 2px;
 }
 
+#TABLET {
+  max-width: 768px;
+}
+
+#MOBILE {
+  max-width: 425px;
+}
+
 /* Mixins
 ----------------------------------------------------------------------- */
 /* Helpers */
@@ -212,6 +220,12 @@ body header ul.contact li {
 
 body header ul.contact li i.fas {
   margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  body header ul.contact {
+    display: none;
+  }
 }
 
 body header ul.social li {

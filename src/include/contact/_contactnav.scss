@@ -9,3 +9,9 @@ ul.contact li
 
     i.fas { margin-right: 8px; }
 }
+
+@media (max-width: $break-tablet) {
+    ul.contact {
+        display: none;
+    }
+}
