@@ -9,7 +9,7 @@
   position: relative;
 }
 
-#ABSOLUTE {
+#ABSOLUTE, body header nav {
   position: absolute;
 }
 
@@ -199,6 +199,9 @@ body header {
   padding: 0 30px;
   line-height: 35px;
   z-index: 1;
+  /* Navbar */
+  /* Navbar
+----------------------------------------------------------------------- */
   /* ContactNav */
   /* Contact Nav
 ----------------------------------------------------------------------- */
@@ -216,6 +219,10 @@ body header ul li a {
 body header ul li a:hover,
 body header ul li a a:hover {
   color: #FF305B;
+}
+
+body header nav {
+  margin-top: 60px;
 }
 
 body header ul.contact li {
