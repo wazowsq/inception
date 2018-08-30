@@ -17,9 +17,10 @@ aside
             @extend #LEFT;
 
             .full-opacity
-            {
-                background: rgba(44,62,80,0.8);   
-            }
+            { background: rgba(44,62,80,0.8); }
+
+            .full-opacity, .full-content
+            { padding: 90px 180px; }
         }
 
         section.home
