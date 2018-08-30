@@ -1,0 +1,15 @@
+/* Social Nav
+----------------------------------------------------------------------- */
+
+ul.social
+{
+    @extend #RIGHT;
+
+    li
+    {
+        margin: 0 5px;
+
+        &:last-child
+        { margin-right: 5px; }
+    }
+}

@@ -20,25 +20,9 @@ header
         { color: $danger; }
     }
 
-    ul.contact li
-    {
-        margin-right: 30px;
+    /* ContactNav */
+    @import "../contact/contactnav";
 
-        &:last-child { @extend #NO-MARGIN; }
-
-        i.fas { margin-right: 8px; }
-    }
-
-    ul.social
-    {
-        @extend #RIGHT;
-
-        li
-        {
-            margin: 0 5px;
-
-            &:last-child
-            { margin-right: 5px; }
-        }
-    }
+    /* ContactNav */
+    @import "../social/socialnav";
 }

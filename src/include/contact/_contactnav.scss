@@ -1,0 +1,11 @@
+/* Contact Nav
+----------------------------------------------------------------------- */
+
+ul.contact li
+{
+    margin-right: 30px;
+
+    &:last-child { @extend #NO-MARGIN; }
+
+    i.fas { margin-right: 8px; }
+}
