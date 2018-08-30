@@ -5,22 +5,17 @@ const Header = () => {
         <aside>
             <article>
                 <section className="home">
-                    a
+                    <div className="full-opacity"></div>
                 </section>
-                <section className="about">
-                    b
+                <section className="about"></section>
+                <section className="experience"></section>
+                <section className="data">
+                    <div className="full-opacity"></div>
                 </section>
-                <section className="experience">
-                    c
-                </section>
-                <section className="portfolio">
-                    d
-                </section>
+                <section className="portfolio"></section>
+                <section className="company"></section>
                 <section className="contact">
-                    e
-                </section>
-                <section className="blog">
-                    f
+                    <div className="full-opacity"></div>
                 </section>
             </article>
         </aside>

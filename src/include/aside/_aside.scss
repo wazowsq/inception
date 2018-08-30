@@ -1,7 +1,7 @@
 /* Aside
 ----------------------------------------------------------------------- */
 
-aside, article, section
+aside, article, section, .full-opacity
 { @include default; }
 
 aside
@@ -11,9 +11,44 @@ aside
     article
     {
         @extend #OVERFLOW;
-        padding: 30px;
 
         section
-        { @extend #LEFT; }
+        {
+            @extend #LEFT;
+
+            .full-opacity
+            {
+                background: rgba(44,62,80,0.8);   
+            }
+        }
+
+        section.home
+        {
+            background: url(../../dist/img/bg/parallax.jpg) no-repeat center center;
+            @include cover;
+        }
+
+        section.about,
+        section.company
+        {
+            background: $dark;
+        }
+
+        section.data
+        {
+            background: url(../../dist/img/bg/slider_1.jpg) no-repeat center center;
+            @include cover;
+        }
+
+        section.portfolio
+        {
+            background: $silver;
+        }
+
+        section.contact
+        {
+            background: url(../../dist/img/bg/home_snapshot_intro.jpg) no-repeat center center;
+            @include cover;
+        }
     }
 }
