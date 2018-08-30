@@ -4,11 +4,7 @@
 header
 {
     @extend #FIXED;
-    @include space;
-    width: $percentage; height: 35px;
-    background: $silver;
     padding: 0 30px;
-    line-height: 35px;
     z-index: 1;
 
     ul li,
