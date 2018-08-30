@@ -21,6 +21,9 @@ header
         { color: $danger; }
     }
 
+    /* Navbar */
+    @import "../navbar/navbar";
+
     /* ContactNav */
     @import "../contact/contactnav";
 
