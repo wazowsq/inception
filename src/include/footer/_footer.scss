@@ -3,7 +3,11 @@
 
 footer
 {
-    @extend #LEFT;
+    @extend #LEFT, #CENTER;
     
-    p { color: $dark; }
+    p
+    {
+        color: $dark;
+        font-size: 0.68rem;
+    }
 }

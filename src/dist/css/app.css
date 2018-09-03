@@ -101,7 +101,7 @@
   text-transform: lowercase;
 }
 
-#CENTER {
+#CENTER, body footer {
   text-align: center;
 }
 
@@ -349,4 +349,5 @@ body aside article section.contact {
 
 body footer p {
   color: #201F24;
+  font-size: 0.68rem;
 }

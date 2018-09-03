@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Footer from '../footer';
+
 const Header = () => {
     return (
         <aside>
@@ -39,6 +41,7 @@ const Header = () => {
                     
                     </div>
                 </section>
+                <Footer />
             </article>
         </aside>
     );
