@@ -13,11 +13,19 @@ const Header = () => {
                 </section>
                 <section className="about" id="about">
                     <div className="full-content">
+                        <div className="item-number">
+                            <p className="number">01</p>
+                            <p className="title">about me</p>
+                        </div>
                     
                     </div>
                 </section>
                 <section className="experience" id="experience">
                     <div className="full-content">
+                        <div className="item-number">
+                            <p className="number">02</p>
+                            <p className="title">experience</p>
+                        </div>
                     
                     </div>
                 </section>
@@ -28,6 +36,10 @@ const Header = () => {
                 </section>
                 <section className="portfolio" id="portfolio">
                     <div className="full-content">
+                        <div className="item-number">
+                            <p className="number">03</p>
+                            <p className="title">portfolio</p>
+                        </div>
                     
                     </div>
                 </section>

@@ -5,11 +5,11 @@
 ----------------------------------------------------------------------- */
 /* Settings
 ----------------------------------------------------------------------- */
-#RELATIVE {
+#RELATIVE, body aside article section .full-opacity, body aside article section .full-content {
   position: relative;
 }
 
-#ABSOLUTE, body header nav {
+#ABSOLUTE, body header nav, body aside article section .item-number, body aside article section .item-number p, body aside article section .item-number .title::after, body aside article section .item-number .title:before {
   position: absolute;
 }
 
@@ -21,7 +21,7 @@
   float: left;
 }
 
-#RIGHT, body header ul.social, body aside article section .item-number {
+#RIGHT, body header ul.social {
   float: right;
 }
 
@@ -37,7 +37,7 @@
   display: none;
 }
 
-#SHOW {
+#SHOW, body aside article section .item-number .title::after, body aside article section .item-number .title:before {
   display: block;
 }
 
@@ -47,7 +47,7 @@
 
 #NO-MARGIN, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, *,
 *:after,
-*:before, #root, .content, body header ul.contact li:last-child, body aside, body article, body section, body .full-opacity, body ul {
+*:before, #root, .content, body header ul.contact li:last-child, body aside, body article, body section, body .full-opacity, body aside article section .item-number, body aside article section .item-number .title::after, body aside article section .item-number .title:before, body ul {
   margin: 0;
 }
 
@@ -315,25 +315,41 @@ body aside article section .full-opacity, body aside article section .full-conte
 }
 
 body aside article section .item-number {
-  margin: 0;
+  right: 0;
 }
 
 body aside article section .item-number p {
   color: white;
+  right: 0;
 }
 
 body aside article section .item-number .number {
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 4.37rem;
+  margin-right: 50px;
 }
 
 body aside article section .item-number .title {
-  font-weight: normal;
+  margin-top: 30px;
+  font-weight: lighter;
   font-size: 0.93rem;
+  transform: rotate(-90deg);
 }
 
 body aside article section .item-number .title::after, body aside article section .item-number .title:before {
   content: "";
+  width: 50px;
+  border-top: solid 1px white;
+}
+
+body aside article section .item-number .title::before {
+  margin-left: -60px;
+  margin-top: 9px;
+}
+
+body aside article section .item-number .title::after {
+  margin-left: 60px;
+  margin-top: -8px;
 }
 
 body aside article section.home {
