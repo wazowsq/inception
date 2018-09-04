@@ -21,6 +21,31 @@ aside
 
             .full-opacity, .full-content
             { padding: 90px 180px; }
+
+            .item-number
+            {
+                @extend #RIGHT;
+                margin: 0;
+
+                p { color: $light; }
+
+                .number
+                {
+                    font-weight: lighter;
+                    font-size: 4.37rem;
+                }
+
+                .title
+                {
+                    font-weight: normal;
+                    font-size: 0.93rem;
+
+                    &::after, &:before
+                    {
+                        content: "";
+                    }
+                }
+            }
         }
 
         section.home

@@ -38,7 +38,10 @@ const Header = () => {
                 </section>
                 <section className="contact" id="contact">
                     <div className="full-opacity">
-                    
+                        <div className="item-number">
+                            <p className="number">04</p>
+                            <p className="title">contact</p>
+                        </div>
                     </div>
                 </section>
                 <Footer />

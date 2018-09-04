@@ -21,7 +21,7 @@
   float: left;
 }
 
-#RIGHT, body header ul.social {
+#RIGHT, body header ul.social, body aside article section .item-number {
   float: right;
 }
 
@@ -312,6 +312,28 @@ body aside article section .full-opacity {
 
 body aside article section .full-opacity, body aside article section .full-content {
   padding: 90px 180px;
+}
+
+body aside article section .item-number {
+  margin: 0;
+}
+
+body aside article section .item-number p {
+  color: white;
+}
+
+body aside article section .item-number .number {
+  font-weight: lighter;
+  font-size: 4.37rem;
+}
+
+body aside article section .item-number .title {
+  font-weight: normal;
+  font-size: 0.93rem;
+}
+
+body aside article section .item-number .title::after, body aside article section .item-number .title:before {
+  content: "";
 }
 
 body aside article section.home {
