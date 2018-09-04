@@ -27,7 +27,30 @@ aside
 
             .item-number
             {
-                p { color: $light; }
+                p
+                {
+                    @extend #NO-MARGIN;
+                    color: $light;
+                }
+ 
+                p.number
+                {
+                    font-weight: 400;
+                    font-size: 4.37rem;
+                }
+ 
+                p.title
+                {
+                    font-weight: lighter;
+                    font-size: 0.93rem;
+                    min-width: 80px;
+                    padding: 0 10px;
+
+                    &::before, &::after
+                    {
+                        content: "";
+                    }
+                }
             }
         }
 

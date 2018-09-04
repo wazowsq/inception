@@ -47,7 +47,7 @@
 
 #NO-MARGIN, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, *,
 *:after,
-*:before, #root, .content, body header ul.contact li:last-child, body aside, body article, body section, body .full-opacity, body ul {
+*:before, #root, .content, body header ul.contact li:last-child, body aside, body article, body section, body .full-opacity, body aside article section .item-number p, body ul {
   margin: 0;
 }
 
@@ -316,6 +316,22 @@ body aside article section .full-opacity, body aside article section .full-conte
 
 body aside article section .item-number p {
   color: white;
+}
+
+body aside article section .item-number p.number {
+  font-weight: 400;
+  font-size: 4.37rem;
+}
+
+body aside article section .item-number p.title {
+  font-weight: lighter;
+  font-size: 0.93rem;
+  min-width: 80px;
+  padding: 0 10px;
+}
+
+body aside article section .item-number p.title::before, body aside article section .item-number p.title::after {
+  content: "";
 }
 
 body aside article section.home {
