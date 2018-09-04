@@ -22,10 +22,6 @@ const Header = () => {
                 </section>
                 <section className="experience" id="experience">
                     <div className="full-content">
-                        <div className="item-number">
-                            <p className="number">02</p>
-                            <p className="title">experience</p>
-                        </div>
                     
                     </div>
                 </section>
@@ -36,10 +32,6 @@ const Header = () => {
                 </section>
                 <section className="portfolio" id="portfolio">
                     <div className="full-content">
-                        <div className="item-number">
-                            <p className="number">03</p>
-                            <p className="title">portfolio</p>
-                        </div>
                     
                     </div>
                 </section>
@@ -50,10 +42,7 @@ const Header = () => {
                 </section>
                 <section className="contact" id="contact">
                     <div className="full-opacity">
-                        <div className="item-number">
-                            <p className="number">04</p>
-                            <p className="title">contact</p>
-                        </div>
+                    
                     </div>
                 </section>
                 <Footer />

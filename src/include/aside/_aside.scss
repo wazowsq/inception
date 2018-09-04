@@ -27,51 +27,7 @@ aside
 
             .item-number
             {
-                @extend #ABSOLUTE, #NO-MARGIN;
-                right: 0;
-
-                p
-                {
-                    @extend #ABSOLUTE;
-                    color: $light;
-                    right: 0;
-                }
-
-                .number
-                {
-                    font-weight: 400;
-                    font-size: 4.37rem;
-                    margin-right: 50px;
-
-                }
-
-                .title
-                {
-                    margin-top: 30px;
-                    font-weight: lighter;
-                    font-size: 0.93rem;
-                    transform: rotate(-90deg);
-
-                    &::after, &:before
-                    {
-                        @extend #SHOW, #ABSOLUTE, #NO-MARGIN;
-                        content: "";
-                        width: 50px;
-                        border-top: solid 1px $light;
-                    }
-
-                    &::before
-                    {
-                        margin-left: -60px;
-                        margin-top: 9px;
-                    }
-
-                    &::after
-                    {
-                        margin-left: 60px;
-                        margin-top: -8px;
-                    }
-                }
+                p { color: $light; }
             }
         }
 
